@@ -50,6 +50,9 @@ export default function Contact() {
     return (
         <Form {...form}>
             <div className='px-5' id='#contact'>
+                <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
+                    Contact
+                </h2>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
                     className='mx-auto p-5 md:p-[5vh] lg:p-[10vh] bg-white max-w-screen-xl not-last:rounded-xl shadow-md space-y-6 rounded-lg'

@@ -41,4 +41,8 @@ time:
 
 2hr
 
-12:35-1:10
+12:35-4
+
+3-4
+
+gigabasic animations

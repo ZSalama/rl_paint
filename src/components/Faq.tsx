@@ -13,13 +13,13 @@ export default function Faq() {
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
                     FAQ
                 </h2>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
-                                <p>Am I insured?</p>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
+                                Am you insured?
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     Great question! Yes, we are fully insured
                                     and licensed to operate in the state of
@@ -33,13 +33,13 @@ export default function Faq() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
                                 <p>Can I get a quote?</p>
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     Absolutely! We offer free estimates for all
                                     our services. Just reach out to us with the
@@ -51,13 +51,13 @@ export default function Faq() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
                                 <p>How long will my project take?</p>
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     The duration of a project can vary based on
                                     its size and complexity. After assessing
@@ -70,13 +70,13 @@ export default function Faq() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
                                 <p>Do you offer warranties on your work?</p>
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     Yes, we stand behind our work and offer
                                     warranties on our services. The specifics of
@@ -88,13 +88,13 @@ export default function Faq() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
                                 <p>Will you clean up after the job?</p>
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     Yes, we believe in leaving your space as
                                     clean as we found it. Our team will clean up
@@ -106,13 +106,13 @@ export default function Faq() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
-                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                            <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
                                 <p>Can you work on weekends or evenings?</p>
                             </AccordionTrigger>
-                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                            <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
                                     Yes, we understand that many of our clients
                                     have busy schedules. We offer flexible
