@@ -15,7 +15,7 @@ export default function Hero() {
         >
             <section id='hero'>
                 <div className='mx-auto sm:px-7 px-4 max-w-screen-xl py-20 text-center flex flex-col min-h-[calc(100vh)] justify-center z-10 relative'>
-                    <h1 className='pb-2 pt-4 text-3xl md:text-6xl font-bold max-w-[900px] mx-auto text-black'>
+                    <h1 className='flex fler-row pb-2 pt-4 text-3xl md:text-6xl font-bold max-w-[900px] mx-auto text-black'>
                         RL Painting Solutions
                     </h1>
                     <p className='pb-10 text-lg text-black max-w-[600px] mx-auto pt-20'>

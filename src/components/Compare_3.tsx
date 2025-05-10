@@ -10,6 +10,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from '@/components/ui/dialog'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const Carousel = dynamic(() => import('react-multi-carousel'), {
     ssr: false,
@@ -173,16 +174,16 @@ const ButtonGroup = ({
     return (
         <div className='flex flex-row items-center justify-center gap-4 py-4'>
             <button
-                className='bg-[var(--primary)] shadow px-6 py-3 rounded hover:bg-[var(--foreground)] active:bg-[var(--foreground)]) hover:text-[var(--primary)]'
+                className='cursor-pointer bg-[var(--primary)] shadow px-6 py-3 rounded hover:bg-[var(--foreground)] active:bg-[var(--foreground)]) hover:text-[var(--primary)]'
                 onClick={previous}
             >
-                ‹
+                <ArrowLeft className='w-5 h-5' />
             </button>
             <button
-                className='bg-[var(--primary)] shadow px-6 py-3 rounded hover:bg-[var(--foreground)] active:bg-[var(--foreground)]) hover:text-[var(--primary)]'
+                className='cursor-pointer bg-[var(--primary)] shadow px-6 py-3 rounded hover:bg-[var(--foreground)] active:bg-[var(--foreground)]) hover:text-[var(--primary)]'
                 onClick={next}
             >
-                ›
+                <ArrowRight className='w-5 h-5' />
             </button>
         </div>
     )

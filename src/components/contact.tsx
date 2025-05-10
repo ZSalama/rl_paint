@@ -138,10 +138,10 @@ export default function Contact() {
                                         />
                                     </FormControl>
                                     <FormDescription>
-                                        If you prefer to call, you can reach me
-                                        at:{' '}
-                                        <a href='tel:8636700537'>
-                                            (863) 670-0537
+                                        If you prefer to call or text, you can
+                                        reach me at:{' '}
+                                        <a href='tel:9043105196'>
+                                            (904) 310-5196
                                         </a>
                                     </FormDescription>
                                     <FormMessage />
