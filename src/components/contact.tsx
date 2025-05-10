@@ -49,7 +49,7 @@ export default function Contact() {
 
     return (
         <Form {...form}>
-            <div className='px-5 '>
+            <div className='px-5' id='#contact'>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
                     className='mx-auto p-5 md:p-[5vh] lg:p-[10vh] bg-white max-w-screen-xl not-last:rounded-xl shadow-md space-y-6 rounded-lg'
@@ -66,7 +66,7 @@ export default function Contact() {
                                         <Input
                                             {...field}
                                             placeholder='Your name'
-                                            className='w-full'
+                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
                                         />
                                     </FormControl>
                                     <FormDescription>
@@ -88,34 +88,11 @@ export default function Contact() {
                                             {...field}
                                             type='email'
                                             placeholder='you@example.com'
-                                            className='w-full'
+                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
                                         />
                                     </FormControl>
                                     <FormDescription>
                                         We’ll never share your email.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name='favoriteColor'
-                            render={({ field }) => (
-                                <FormItem
-                                    className='col-span-1 absolute left-[9999px] h-[1px] w-[1px] opacity-0'
-                                    tabIndex={-1}
-                                >
-                                    <FormLabel>Favorite Color</FormLabel>
-                                    <FormControl>
-                                        <Input
-                                            {...field}
-                                            name='favoriteColor'
-                                            autoComplete='off'
-                                        />
-                                    </FormControl>
-                                    <FormDescription>
-                                        Just for fun!!
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -177,12 +154,12 @@ export default function Contact() {
                                     <FormControl>
                                         <textarea
                                             {...field}
-                                            placeholder='How can we help?'
+                                            placeholder='I would like to repaint my garage.'
                                             className='w-full h-32 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
                                         />
                                     </FormControl>
                                     <FormDescription>
-                                        Tell us what’s on your mind.
+                                        How can we help?
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>

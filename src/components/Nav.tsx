@@ -7,9 +7,9 @@ export default function Nav() {
         <header className='sticky top-0 z-50 bg-white shadow-md'>
             <div className='mx-auto sm:px-4 px-4 max-w-screen-xl py-4'>
                 <div className='flex flex-row items-center'>
-                    <a
+                    <Link
                         data-aos='fade-right'
-                        href='/qme.html'
+                        href='#hero'
                         className='flex items-center gap-2 justify-center'
                     >
                         <Image
@@ -19,7 +19,7 @@ export default function Nav() {
                             width={50}
                             height={50}
                         />
-                    </a>
+                    </Link>
                     <nav
                         data-aos='fade-left'
                         className='mx-auto mr-0 ml-auto md:mr-0 md:ml-auto mt-0 md:mt-0 flex items-center'
@@ -35,7 +35,7 @@ export default function Nav() {
                             </li> */}
                             <li className='flex-1'>
                                 <Link
-                                    href='#Contact'
+                                    href='#services'
                                     className='bg-[var(--primary)] p-4 rounded block text-center w-24 lg:w-24 hover:bg-[var(--foreground)] hover:text-white hover:shadow-lg transition duration-300'
                                 >
                                     Services
@@ -43,7 +43,7 @@ export default function Nav() {
                             </li>
                             <li className='flex-1'>
                                 <Link
-                                    href='#Contact'
+                                    href='#contact'
                                     className='bg-[var(--primary)] py-4 md:py-4 rounded block text-center w-24 lg:w-24 hover:bg-[var(--foreground)] hover:text-white hover:shadow-lg transition duration-300'
                                 >
                                     Contact

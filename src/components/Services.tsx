@@ -4,7 +4,7 @@ import { PaintbrushVertical, Wrench } from 'lucide-react'
 
 export default function Services() {
     return (
-        <section className='features pt-20'>
+        <section className='features pt-20' id='services'>
             <div className='mx-auto px-4 sm:px-7 max-w-screen-xl py-20'>
                 <h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 mb-4'>
                     Services

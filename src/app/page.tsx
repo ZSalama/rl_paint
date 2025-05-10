@@ -12,7 +12,7 @@ import Faq from '@/components/Faq'
 
 export default function Home() {
     return (
-        <div className='bg-gray-50 antialiased px-0'>
+        <div className='bg-gray-50 px-0'>
             <Nav />
             <div className='px-0 md:px-0 mx-auto'>
                 <Hero />

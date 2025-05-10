@@ -1,95 +1,129 @@
 import React from 'react'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from '@/components/ui/accordion'
 
 export default function Faq() {
     return (
         <section id='FAQ'>
             <div className='gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
-                    Frequently Asked Questions
+                    FAQ
                 </h2>
-                <div className='flex items-start justify-start mb-12'>
-                    <svg
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        className='flex-none w-6 h-6 mr-4 text-gray-700'
-                        aria-hidden='true'
-                    >
-                        <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                        ></path>
-                    </svg>
-                    <div>
-                        <p className='mt-0 mb-3 font-semibold text-gray-900'>
-                            Can i free testing you App ?
-                        </p>
-                        <p className='text-gray-600'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Tenetur reprehenderit labore neque facilis
-                            doloribus placeat! Aliquam eos, aspernatur nulla
-                            perferendis error quidem doloremque porro, possimus
-                            delectus repellendus veritatis ex in?
-                        </p>
-                    </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>Am I insured?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    Great question! Yes, we are fully insured
+                                    and licensed to operate in the state of
+                                    Florida. We take safety and compliance
+                                    seriously, ensuring that all our work meets
+                                    the highest standards. If you need proof of
+                                    insurance, please let us know, and we can
+                                    provide the necessary documentation.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
-                <div className='flex items-start justify-start mb-12'>
-                    <svg
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        className='flex-none w-6 h-6 mr-4 text-gray-700'
-                        aria-hidden='true'
-                    >
-                        <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                        ></path>
-                    </svg>
-                    <div>
-                        <p className='mt-0 mb-3 font-semibold text-gray-900'>
-                            Security issues ?
-                        </p>
-                        <p className='text-gray-600'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Cum minima repellat, facilis magnam doloremque
-                            velit officiis blanditiis corporis! Deserunt fuga
-                            quae harum commodi nemo! Similique impedit repellat
-                            incidunt tenetur odit.
-                        </p>
-                    </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>Can I get a quote?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    Absolutely! We offer free estimates for all
+                                    our services. Just reach out to us with the
+                                    details of your project, and we will
+                                    schedule a time to assess the work needed
+                                    and provide you with a detailed quote.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
-                <div className='flex items-start justify-start mb-12'>
-                    <svg
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        className='flex-none w-6 h-6 mr-4 text-gray-700'
-                        aria-hidden='true'
-                    >
-                        <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                        ></path>
-                    </svg>
-                    <div>
-                        <p className='mt-0 mb-3 font-semibold text-gray-900'>
-                            Do you have ... ?
-                        </p>
-                        <p className='text-gray-600'>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Tempora, impedit accusantium! Expedita ea
-                            repellat atque molestias modi fugit accusamus ipsum
-                            tempora facilis. Fuga vel architecto modi, quae
-                            velit asperiores illum?
-                        </p>
-                    </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>How long will my project take?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    The duration of a project can vary based on
+                                    its size and complexity. After assessing
+                                    your project, we will provide you with an
+                                    estimated timeline. We always strive to
+                                    complete our work efficiently while
+                                    maintaining high-quality standards.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>Do you offer warranties on your work?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    Yes, we stand behind our work and offer
+                                    warranties on our services. The specifics of
+                                    the warranty will be discussed during the
+                                    estimate process, but we want you to feel
+                                    confident in the quality of our work.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>Will you clean up after the job?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    Yes, we believe in leaving your space as
+                                    clean as we found it. Our team will clean up
+                                    all debris and materials after completing
+                                    the job, ensuring that you can enjoy your
+                                    newly completed project without any hassle.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+                <div className='bg-white rounded-xl shadow-md p-2 md:p-10 space-y-6 m-3'>
+                    <Accordion type='single' collapsible>
+                        <AccordionItem value='item-1'>
+                            <AccordionTrigger className='text-xl md:text-2xl font-semibold text-slate-800 hover:underline'>
+                                <p>Can you work on weekends or evenings?</p>
+                            </AccordionTrigger>
+                            <AccordionContent className='text-base md:text-lg text-slate-600 mt-2'>
+                                <article>
+                                    Yes, we understand that many of our clients
+                                    have busy schedules. We offer flexible
+                                    scheduling options, including evenings and
+                                    weekends, to accommodate your needs. Just
+                                    let us know your availability, and we will
+                                    do our best to work around it.
+                                </article>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
             </div>
         </section>
