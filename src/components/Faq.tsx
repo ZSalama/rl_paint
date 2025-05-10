@@ -13,7 +13,7 @@ export default function Faq() {
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
                     FAQ
                 </h2>
-                <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
+                {/* <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
                             <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
@@ -32,7 +32,7 @@ export default function Faq() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </div>
+                </div> */}
                 <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
