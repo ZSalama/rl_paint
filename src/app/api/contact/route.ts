@@ -4,7 +4,6 @@ import { NextResponse } from 'next/server'
 export async function POST(request: Request) {
     // 1) Grab the form data
     const { name, email, message, favoriteColor } = await request.json()
-    const req = await request.json()
 
     // 2) Check your Web3Forms access key
     const accessKey = process.env.EMAIL_ACCESS_TOKEN
@@ -13,13 +12,6 @@ export async function POST(request: Request) {
             { error: 'Missing EMAIL_ACCESS_TOKEN environment variable' },
             { status: 500 }
         )
-    }
-
-    const submitTime = Date.now() - parseInt(req.body.timestamp)
-    if (submitTime < 3000) {
-        // less than 3 seconds
-        console.log('Spam detected: form submitted too quickly')
-        return NextResponse.json({ success: true })
     }
 
     // 3) Honeypot spam check (hidden field "favoriteColor")

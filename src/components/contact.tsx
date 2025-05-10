@@ -113,30 +113,6 @@ export default function Contact() {
                                     <FormControl>
                                         <Input
                                             {...field}
-                                            type='hidden'
-                                            name='timestamp'
-                                            value={Date.now()}
-                                        />
-                                    </FormControl>
-                                    <FormDescription>
-                                        Just for fun!
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name='favoriteColor'
-                            render={({ field }) => (
-                                <FormItem
-                                    className='col-span-1 hidden'
-                                    tabIndex={-1}
-                                >
-                                    <FormLabel>Favorite Color</FormLabel>
-                                    <FormControl>
-                                        <Input
-                                            {...field}
                                             placeholder='e.g. Blue'
                                             className='w-full'
                                         />
