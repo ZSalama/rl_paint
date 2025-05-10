@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 // import Compare from '@/components/Compare'
-import Compare_2 from '@/components/Compare_2'
+// import Compare_2 from '@/components/Compare_2'
 import Compare_3 from '@/components/Compare_3'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
                 <Services />
 
                 {/* <Compare /> */}
-                <Compare_2 />
+                {/* <Compare_2 /> */}
                 <Compare_3 />
                 <section>
                     <div className='flex flex-col gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>

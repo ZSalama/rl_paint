@@ -8,8 +8,8 @@ const imagePairs = [
         right: '/logoqme.png',
     },
     {
-        left: '/iphone-mockup.png',
-        right: '/hero.png',
+        left: '/logoqme.png',
+        right: '/logo_outline.png',
     },
     {
         left: '/logo_outline.png',
@@ -40,16 +40,16 @@ export default function Compare_2() {
                         handleSize={40}
                     />
                     {/* Navigation buttons */}
-                    <div className='absolute inset-0 flex justify-between items-center px-4 z-10 pointer-events-none'>
+                    <div className='absolute inset-4 flex justify-between items-center px-4 z-10 pointer-events-none'>
                         <button
                             onClick={prev}
-                            className='bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow-md transition pointer-events-auto'
+                            className='bg-white/80 hover:bg-white text-black px-3 py-2 rounded-full shadow-md transition pointer-events-auto'
                         >
                             ←
                         </button>
                         <button
                             onClick={next}
-                            className='bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow-md transition pointer-events-auto'
+                            className='bg-white/80 hover:bg-white text-black px-3 py-2 rounded-full shadow-md transition pointer-events-auto'
                         >
                             →
                         </button>
