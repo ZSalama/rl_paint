@@ -23,16 +23,16 @@ export default function Hero() {
                     </p>
                     <div className='flex mx-auto gap-0 md:gap-10 items-center'>
                         <div className='hidden md:block ml-[-96px]'>
-                            <Image
+                            {/* <Image
                                 src='/home-arrow.svg'
                                 alt=''
                                 width={50}
                                 height={50}
-                            />
+                            /> */}
                         </div>
                         <Link
                             href='#contact'
-                            className='transition ease-in-out delay-150 border-2 border-blue-600 py-2 px-10 rounded-full font-bold bg-blue-600 text-white hover:bg-white hover:text-blue-600 text-xl'
+                            className='relative inline-block px-6 py-3 font-bold text-white transition-all bg-[var(--foreground)] active:bg-[var(--secondary)] duration-500 rounded-full shadow-lg hover:scale-120'
                         >
                             Lets start
                         </Link>

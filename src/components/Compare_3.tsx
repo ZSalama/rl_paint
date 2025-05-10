@@ -3,12 +3,20 @@
 
 import dynamic from 'next/dynamic'
 import 'react-multi-carousel/lib/styles.css'
+import {
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog'
 
 const Carousel = dynamic(() => import('react-multi-carousel'), {
     ssr: false,
 })
 
 import ReactCompareImage from 'react-compare-image'
+import Image from 'next/image'
 
 const responsive = {
     desktop: {
@@ -106,6 +114,31 @@ export default function Compare_3() {
                         handleSize={40}
                     />
                 </div>
+                <Dialog>
+                    <DialogTrigger>
+                        {' '}
+                        <Image
+                            className='px-5'
+                            src='/logo_outline.png'
+                            alt='Logo Outline'
+                            width={400}
+                            height={400}
+                        />
+                    </DialogTrigger>
+                    <DialogContent>
+                        <DialogHeader>
+                            <DialogTitle area-hidden='false' className='hidden'>
+                                picture of previous work
+                            </DialogTitle>
+                            <Image
+                                src='/logo_outline.png'
+                                alt='Logo Outline'
+                                width={500}
+                                height={500}
+                            />
+                        </DialogHeader>
+                    </DialogContent>
+                </Dialog>
             </Carousel>
         </div>
     )

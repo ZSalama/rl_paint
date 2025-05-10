@@ -3,6 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.button:active {
+    transform: scale(1.1);
+}
+
 :root {
     --primary: #d5cad6;
     --radius: 0.625rem;
