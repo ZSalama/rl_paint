@@ -22,28 +22,43 @@ export default function Compare() {
             <span className='text-center text-xl md:text-2xl text-slate-800 p-6 md:p-8 lg:p-12 flex justify-center'>
                 Slide handle to see before and after
             </span>
-            <div className={`border-box`}>
+            <div className={`border-box `}>
                 <Carousel
                     swipeable={false}
                     draggable={false}
                     showDots={true}
                     responsive={{
-                        superLargeDesktop: {
-                            // the naming can be any, depends on you.
-                            breakpoint: { max: 1000, min: 1000 },
-                            items: 3,
+                        bigdesktop: {
+                            breakpoint: {
+                                max: 3000,
+                                min: 2001,
+                            },
+                            items: 5,
+                            partialVisibilityGutter: 40,
                         },
                         desktop: {
-                            breakpoint: { max: 1000, min: 1024 },
+                            breakpoint: {
+                                max: 2000,
+                                min: 1024,
+                            },
                             items: 3,
-                        },
-                        tablet: {
-                            breakpoint: { max: 1024, min: 464 },
-                            items: 2,
+                            partialVisibilityGutter: 40,
                         },
                         mobile: {
-                            breakpoint: { max: 464, min: 0 },
+                            breakpoint: {
+                                max: 464,
+                                min: 0,
+                            },
                             items: 1,
+                            partialVisibilityGutter: 30,
+                        },
+                        tablet: {
+                            breakpoint: {
+                                max: 1024,
+                                min: 464,
+                            },
+                            items: 2,
+                            partialVisibilityGutter: 30,
                         },
                     }}
                     infinite={true}
@@ -52,7 +67,7 @@ export default function Compare() {
                     transitionDuration={1000}
                     dotListClass='custom-dot-list-style'
                     itemClass='p-3 mb-5  shadow-lg rounded-xl'
-                    // containerClass=''
+                    containerClass='max-h-[calc(70vh)]'
                     // itemClass='mx-2'
                     arrows={false}
                     renderArrowsWhenDisabled={false}
