@@ -13,8 +13,8 @@ export default function Nav() {
                         className='flex items-center gap-2 justify-center'
                     >
                         <Image
-                            src='/logoqme_transparent.png'
-                            className='max-w-[50px] w-full hover:shadow-xl transition duration-300 rounded-b-md'
+                            src='/logo_7.png'
+                            className='max-w-[50px]  w-full hover:shadow-xl transition duration-300 rounded-b-md'
                             alt='logo'
                             width={50}
                             height={50}

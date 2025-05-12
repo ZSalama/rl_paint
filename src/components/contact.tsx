@@ -49,14 +49,16 @@ export default function Contact() {
 
     return (
         <Form {...form}>
-            <div className='px-5' id='#contact'>
+            <div
+                className='px-5 flex flex-col justify-center items-center pt-40'
+                id='contact'
+            >
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
                     Contact
                 </h2>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
-                    className='mx-auto p-5 md:p-[5vh] lg:p-[10vh] bg-white max-w-screen-xl not-last:rounded-xl shadow-md space-y-6 rounded-lg'
-                    id='contact'
+                    className='gap-10 sm:px-7 px-4 max-w-screen-xl py-20 border-4 bg-white/96 rounded-lg shadow-lg md:min-w-xl lg:min-w-4xl'
                 >
                     <div className='grid grid-cols-1 md:grid-cols-1 gap-6 max-w-[90vw] md:max-w-[80vw] lg:max-w-[60vw] mx-auto'>
                         <FormField
@@ -138,7 +140,11 @@ export default function Contact() {
                                         />
                                     </FormControl>
                                     <FormDescription>
-                                        How can we help?
+                                        If you prefer to call or text, you can
+                                        reach me at:{' '}
+                                        <a href='tel:9043105196'>
+                                            (904) 310-5196
+                                        </a>
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
