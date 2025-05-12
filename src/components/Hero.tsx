@@ -7,7 +7,7 @@ export default function Hero() {
         <div className='relative w-full h-screen [mask-image:linear-gradient(to_bottom,black_90%,transparent_100%)]'>
             <section id='hero'>
                 {/* Dark overlay */}
-                <div className='absolute inset-0 bg-black bg-opacity-40' />
+                <div className='absolute inset-0 bg-black bg-opacity-40 border-b border-r border-black/30 shadow-lg' />
 
                 {/* Content */}
                 <div className='mx-auto sm:px-7 px-4 max-w-screen-xl py-20 text-center flex flex-col justify-center min-h-[calc(100vh)]  z-10 relative'>

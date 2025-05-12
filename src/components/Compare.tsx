@@ -2,13 +2,6 @@
 
 import dynamic from 'next/dynamic'
 import 'react-multi-carousel/lib/styles.css'
-import {
-    Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from '@/components/ui/dialog'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const Carousel = dynamic(() => import('react-multi-carousel'), {
@@ -18,60 +11,6 @@ const Carousel = dynamic(() => import('react-multi-carousel'), {
 import ReactCompareImage from 'react-compare-image'
 import Image from 'next/image'
 import { useRef } from 'react'
-
-// const responsive = {
-//     desktop: {
-//         breakpoint: {
-//             max: 3000,
-//             min: 1024,
-//         },
-//         items: 3,
-//         partialVisibilityGutter: 40,
-//     },
-//     mobile: {
-//         breakpoint: {
-//             max: 464,
-//             min: 0,
-//         },
-//         items: 1,
-//         partialVisibilityGutter: 30,
-//     },
-//     tablet: {
-//         breakpoint: {
-//             max: 1024,
-//             min: 464,
-//         },
-//         items: 2,
-//         partialVisibilityGutter: 30,
-//     },
-// }
-
-// working carousel
-// <Carousel
-//     swipeable={false}
-//     draggable={false}
-//     showDots={true}
-//     responsive={responsive}
-//     infinite={true}
-//     autoPlay={false}
-//     autoPlaySpeed={1000}
-//     keyBoardControl={true}
-//     customTransition='all .5'
-//     transitionDuration={500}
-//     containerClass='carousel-container'
-//     dotListClass='custom-dot-list-style'
-//     itemClass='carousel-item-padding-40-px'
-//     arrows={false}
-//     renderArrowsWhenDisabled={false}
-//     renderButtonGroupOutside={true}
-//     customButtonGroup={
-//         <ButtonGroup
-//             next={() => carouselRef.current}
-//             previous={() => carouselRef.current}
-//         />
-//     }
-//     slidesToSlide={1}
-// ></Carousel>
 
 export default function Compare() {
     const carouselRef = useRef<typeof Carousel>(null)
@@ -83,57 +22,39 @@ export default function Compare() {
             <span className='text-center text-xl md:text-2xl text-slate-800 p-6 md:p-8 lg:p-12 flex justify-center'>
                 Slide handle to see before and after
             </span>
-            <div className='relative'>
+            <div className={`border-box`}>
                 <Carousel
-                    additionalTransfrom={0}
-                    arrows
-                    autoPlaySpeed={3000}
-                    centerMode={false}
-                    className=''
-                    containerClass='container'
-                    dotListClass=''
-                    draggable
-                    focusOnSelect={false}
-                    infinite
-                    itemClass=''
-                    keyBoardControl
-                    minimumTouchDrag={80}
-                    pauseOnHover
-                    renderDotsOutside={false}
+                    swipeable={false}
+                    draggable={false}
+                    showDots={true}
                     responsive={{
+                        // superLargeDesktop: {
+                        //     // the naming can be any, depends on you.
+                        //     breakpoint: { max: 1000, min: 1024 },
+                        //     items: 3,
+                        // },
                         desktop: {
-                            breakpoint: {
-                                max: 3000,
-                                min: 1024,
-                            },
+                            breakpoint: { max: 1000, min: 1024 },
                             items: 3,
-                            partialVisibilityGutter: 40,
-                        },
-                        mobile: {
-                            breakpoint: {
-                                max: 464,
-                                min: 0,
-                            },
-                            items: 1,
-                            partialVisibilityGutter: 30,
                         },
                         tablet: {
-                            breakpoint: {
-                                max: 1024,
-                                min: 464,
-                            },
+                            breakpoint: { max: 1024, min: 464 },
                             items: 2,
-                            partialVisibilityGutter: 30,
+                        },
+                        mobile: {
+                            breakpoint: { max: 464, min: 0 },
+                            items: 1,
                         },
                     }}
-                    rewind={false}
-                    rewindWithAnimation={false}
-                    rtl={false}
-                    shouldResetAutoplay
-                    showDots={false}
-                    sliderClass=''
-                    slidesToSlide={1}
-                    swipeable
+                    infinite={true}
+                    autoPlay={false}
+                    keyBoardControl={true}
+                    transitionDuration={1000}
+                    dotListClass='custom-dot-list-style'
+                    itemClass='p-3 mb-5  shadow-lg rounded-xl'
+                    // containerClass=''
+                    // itemClass='mx-2'
+                    arrows={false}
                     renderArrowsWhenDisabled={false}
                     renderButtonGroupOutside={true}
                     customButtonGroup={
@@ -142,12 +63,15 @@ export default function Compare() {
                             previous={() => carouselRef.current}
                         />
                     }
+                    slidesToSlide={1}
                 >
                     <ReactCompareImage
                         leftImage='/before_pillar_1.jpeg'
                         rightImage='/after_pillar_1.jpeg'
                         sliderLineWidth={5}
                         handleSize={40}
+                        leftImageCss={{ borderRadius: '10px' }}
+                        rightImageCss={{ borderRadius: '10px' }}
                     />
 
                     <ReactCompareImage
@@ -155,6 +79,8 @@ export default function Compare() {
                         rightImage='/after_12.jpg'
                         sliderLineWidth={5}
                         handleSize={40}
+                        leftImageCss={{ borderRadius: '10px' }}
+                        rightImageCss={{ borderRadius: '10px' }}
                     />
 
                     <ReactCompareImage
@@ -162,120 +88,46 @@ export default function Compare() {
                         rightImage='/after_8.jpg'
                         sliderLineWidth={5}
                         handleSize={40}
+                        leftImageCss={{ borderRadius: '10px' }}
+                        rightImageCss={{ borderRadius: '10px' }}
+                    />
+                    <Image
+                        className='rounded-lg'
+                        src='/after_100.jpg'
+                        alt='Example Work'
+                        width={4000}
+                        height={2000}
+                    />
+                    <Image
+                        className='rounded-lg'
+                        src='/after_3.jpg'
+                        alt='Example Work'
+                        width={1000}
+                        height={1000}
                     />
 
-                    <Dialog>
-                        <DialogTrigger>
-                            {' '}
-                            <Image
-                                className='px-5'
-                                src='/after_1.jpg'
-                                alt='Example Work'
-                                width={400}
-                                height={400}
-                            />
-                        </DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                                <DialogTitle
-                                    area-hidden='false'
-                                    className='hidden'
-                                >
-                                    picture of previous work
-                                </DialogTitle>
-                                <Image
-                                    src='/after_1.jpg'
-                                    alt='Example Work'
-                                    width={500}
-                                    height={500}
-                                />
-                            </DialogHeader>
-                        </DialogContent>
-                    </Dialog>
-                    <Dialog>
-                        <DialogTrigger>
-                            {' '}
-                            <Image
-                                className='px-5'
-                                src='/after_3.jpg'
-                                alt='Example Work'
-                                width={400}
-                                height={400}
-                            />
-                        </DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                                <DialogTitle
-                                    area-hidden='false'
-                                    className='hidden'
-                                >
-                                    picture of previous work
-                                </DialogTitle>
-                                <Image
-                                    src='/after_3.jpg'
-                                    alt='Example Work'
-                                    width={500}
-                                    height={500}
-                                />
-                            </DialogHeader>
-                        </DialogContent>
-                    </Dialog>
-                    <Dialog>
-                        <DialogTrigger>
-                            {' '}
-                            <Image
-                                className='px-5'
-                                src='/after_8.jpg'
-                                alt='Example Work'
-                                width={400}
-                                height={400}
-                            />
-                        </DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                                <DialogTitle
-                                    area-hidden='false'
-                                    className='hidden'
-                                >
-                                    picture of previous work
-                                </DialogTitle>
-                                <Image
-                                    src='/after_8.jpg'
-                                    alt='Example Work'
-                                    width={500}
-                                    height={500}
-                                />
-                            </DialogHeader>
-                        </DialogContent>
-                    </Dialog>
-                    <Dialog>
-                        <DialogTrigger>
-                            {' '}
-                            <Image
-                                className='px-5'
-                                src='/after_17.jpg'
-                                alt='Example Work'
-                                width={400}
-                                height={400}
-                            />
-                        </DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                                <DialogTitle
-                                    area-hidden='false'
-                                    className='hidden'
-                                >
-                                    picture of previous work
-                                </DialogTitle>
-                                <Image
-                                    src='/after_17.jpg'
-                                    alt='Example Work'
-                                    width={500}
-                                    height={500}
-                                />
-                            </DialogHeader>
-                        </DialogContent>
-                    </Dialog>
+                    <Image
+                        className='rounded-lg'
+                        src='/after_101.jpg'
+                        alt='Example Work'
+                        width={1000}
+                        height={1000}
+                    />
+
+                    {/* <Image
+                        className='rounded-lg'
+                        src='/after_102.jpg'
+                        alt='Example Work'
+                        width={1000}
+                        height={1000}
+                    /> */}
+                    <Image
+                        className='rounded-lg'
+                        src='/after_103.jpg'
+                        alt='Example Work'
+                        width={1000}
+                        height={1000}
+                    />
                 </Carousel>
             </div>
         </div>

@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { formSchema } from '@/lib/types'
+// import Image from 'next/image'
 
 type FormSchema = z.infer<typeof formSchema>
 
@@ -53,12 +54,21 @@ export default function Contact() {
                 className='px-5 flex flex-col justify-center items-center pt-40'
                 id='contact'
             >
-                <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
+                <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700 max-w-4xl'>
                     Contact
+                    {/* <div className='relative w-full'>
+                        <Image
+                            src='/rob.jpg'
+                            alt='Overlapping Graphic'
+                            width={100}
+                            height={100}
+                            className='absolute top-3 md:top-0 lg:top-0 left-20 md:left-60 lg:left-80 z-10  border-b-4 border-r-4 rounded-lg'
+                        />
+                    </div> */}
                 </h2>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
-                    className='gap-10 sm:px-7 px-4 max-w-screen-xl py-20 border-4 bg-white/96 rounded-lg shadow-lg md:min-w-xl lg:min-w-4xl'
+                    className='gap-10 sm:px-7 px-4 max-w-screen-xl py-20 border-b-6 border-r-6 bg-white/96 rounded-lg shadow-lg md:min-w-xl lg:min-w-4xl'
                 >
                     <div className='grid grid-cols-1 md:grid-cols-1 gap-6 max-w-[90vw] md:max-w-[80vw] lg:max-w-[60vw] mx-auto'>
                         <FormField
@@ -71,7 +81,7 @@ export default function Contact() {
                                         <Input
                                             {...field}
                                             placeholder='Your name'
-                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
+                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)] border-r-4 border-b-4'
                                         />
                                     </FormControl>
                                     <FormDescription>
@@ -93,11 +103,11 @@ export default function Contact() {
                                             {...field}
                                             type='email'
                                             placeholder='you@example.com'
-                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
+                                            className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)] border-r-4 border-b-4'
                                         />
                                     </FormControl>
                                     <FormDescription>
-                                        We’ll never share your email.
+                                        We&apos;ll never share your email.
                                     </FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -116,7 +126,7 @@ export default function Contact() {
                                         <Input
                                             {...field}
                                             placeholder='e.g. Blue'
-                                            className='w-full'
+                                            className='w-full '
                                         />
                                     </FormControl>
                                     <FormDescription>
@@ -136,7 +146,7 @@ export default function Contact() {
                                         <textarea
                                             {...field}
                                             placeholder='I would like to repaint my garage.'
-                                            className='w-full h-32 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)]'
+                                            className='w-full h-32 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)] border-r-4 border-b-4'
                                         />
                                     </FormControl>
                                     <FormDescription>
@@ -152,7 +162,7 @@ export default function Contact() {
                         />
                         <Button
                             type='submit'
-                            className='flex cursor-pointer w-full md:w-50 bg-[var(--primary)] hover:bg-[var(--foreground)] font-medium transition-colors justify-center items-center text-black hover:text-[var(--primary)]'
+                            className='flex cursor-pointer w-full md:w-50 bg-[var(--primary)] hover:bg-[var(--foreground)] font-medium transition-colors justify-center items-center border-b-4 border-r-4 text-black hover:text-[var(--primary)]'
                         >
                             Send Message
                         </Button>

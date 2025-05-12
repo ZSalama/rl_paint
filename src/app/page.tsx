@@ -6,7 +6,7 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 // import Compare from '@/components/Compare'
 // import Compare_2 from '@/components/Compare_2'
-import Compare_3 from '@/components/Compare_3'
+import Compare from '@/components/Compare'
 import Contact from '@/components/contact'
 import Faq from '@/components/Faq'
 // import Testimonials from '@/components/Testimonials'
@@ -15,10 +15,10 @@ export default function Home() {
     return (
         <div className='bg-gray-50 px-0  '>
             <Nav />
-            <div className='px-0 md:px-0 mx-auto'>
+            <div className='px-0 md:px-0'>
                 <Hero />
                 <Services />
-                <Compare_3 />
+                <Compare />
                 <Faq />
                 {/* <Testimonials /> */}
                 <Contact />
