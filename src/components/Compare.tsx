@@ -28,11 +28,11 @@ export default function Compare() {
                     draggable={false}
                     showDots={true}
                     responsive={{
-                        // superLargeDesktop: {
-                        //     // the naming can be any, depends on you.
-                        //     breakpoint: { max: 1000, min: 1024 },
-                        //     items: 3,
-                        // },
+                        superLargeDesktop: {
+                            // the naming can be any, depends on you.
+                            breakpoint: { max: 1500, min: 1000 },
+                            items: 3,
+                        },
                         desktop: {
                             breakpoint: { max: 1000, min: 1024 },
                             items: 3,
