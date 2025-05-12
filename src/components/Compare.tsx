@@ -67,7 +67,7 @@ export default function Compare() {
                     transitionDuration={1000}
                     dotListClass='custom-dot-list-style'
                     itemClass='p-3 mb-5  shadow-lg rounded-xl'
-                    containerClass='max-h-[calc(70vh)]'
+                    containerClass='max-h-300'
                     // itemClass='mx-2'
                     arrows={false}
                     renderArrowsWhenDisabled={false}
