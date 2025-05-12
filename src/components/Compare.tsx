@@ -30,7 +30,7 @@ export default function Compare() {
                     responsive={{
                         superLargeDesktop: {
                             // the naming can be any, depends on you.
-                            breakpoint: { max: 1500, min: 1000 },
+                            breakpoint: { max: 1000, min: 1000 },
                             items: 3,
                         },
                         desktop: {
