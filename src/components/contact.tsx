@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { formSchema } from '@/lib/types'
-// import Image from 'next/image'
+import Image from 'next/image'
 
 type FormSchema = z.infer<typeof formSchema>
 
@@ -56,7 +56,7 @@ export default function Contact() {
             >
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700 max-w-4xl'>
                     Contact
-                    {/* <div className='relative w-full'>
+                    <div className='relative w-full'>
                         <Image
                             src='/rob.jpg'
                             alt='Overlapping Graphic'
@@ -64,7 +64,7 @@ export default function Contact() {
                             height={100}
                             className='absolute top-3 md:top-0 lg:top-0 left-20 md:left-60 lg:left-80 z-10  border-b-4 border-r-4 rounded-lg'
                         />
-                    </div> */}
+                    </div>
                 </h2>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
