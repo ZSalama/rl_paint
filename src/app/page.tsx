@@ -28,8 +28,7 @@ export default function Home() {
                 <footer>
                     <div className='flex flex-col md:flex-row items-center justify-between mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>
                         <p className='text-sm text-center text-gray-700 w-full'>
-                            RLPaintingSoluctions LLC © 2025. All rights
-                            reserved.
+                            RLPaintingSolutions LLC © 2025. All rights reserved.
                         </p>
                     </div>
                 </footer>
