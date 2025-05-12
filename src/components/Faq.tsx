@@ -8,8 +8,8 @@ import {
 
 export default function Faq() {
     return (
-        <section className='snap-center' id='FAQ'>
-            <div className='gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>
+        <section id='FAQ'>
+            <div className='gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl pt-40'>
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
                     FAQ
                 </h2>
@@ -74,15 +74,14 @@ export default function Faq() {
                     <Accordion type='single' collapsible>
                         <AccordionItem value='item-1'>
                             <AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
-                                <p>Do you offer warranties on your work?</p>
+                                <p>Do you guarantee your work?</p>
                             </AccordionTrigger>
                             <AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
                                 <article>
-                                    Yes, we stand behind our work and offer
-                                    warranties on our services. The specifics of
-                                    the warranty will be discussed during the
-                                    estimate process, but we want you to feel
-                                    confident in the quality of our work.
+                                    Yes, your satisfaction is our top priority.
+                                    We take pride in delivering quality results,
+                                    and we&apos;re committed to making sure
+                                    you&apos;re happy with the finished job.
                                 </article>
                             </AccordionContent>
                         </AccordionItem>

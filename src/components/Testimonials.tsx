@@ -4,13 +4,10 @@ import { PaintbrushVertical, Wrench } from 'lucide-react'
 
 export default function Services() {
     return (
-        <section
-            className='features pt-20 h-svh flex items-center snap-center'
-            id='services'
-        >
+        <section className='features  flex items-center' id='services'>
             <div className='mx-auto px-4 sm:px-7 max-w-screen-xl py-20  flex flex-col'>
                 <h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 mb-4'>
-                    Services
+                    Testimonials
                 </h2>
                 <p className='text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12 text-balance'>
                     We offer a range of handyman and painting services tailored

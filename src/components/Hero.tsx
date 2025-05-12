@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className='snap-center relative w-full h-screen [mask-image:linear-gradient(to_bottom,black_90%,transparent_100%)]'>
+        <div className='relative w-full h-screen [mask-image:linear-gradient(to_bottom,black_90%,transparent_100%)]'>
             <section id='hero'>
                 {/* Dark overlay */}
                 <div className='absolute inset-0 bg-black bg-opacity-40' />

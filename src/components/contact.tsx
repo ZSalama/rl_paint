@@ -50,7 +50,7 @@ export default function Contact() {
     return (
         <Form {...form}>
             <div
-                className='px-5 h-svh flex flex-col justify-center items-center snap-center'
+                className='px-5 flex flex-col justify-center items-center pt-40'
                 id='contact'
             >
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
