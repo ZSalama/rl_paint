@@ -8,7 +8,7 @@ import {
 
 export default function Faq() {
     return (
-        <section id='FAQ'>
+        <section className='snap-center' id='FAQ'>
             <div className='gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>
                 <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
                     FAQ

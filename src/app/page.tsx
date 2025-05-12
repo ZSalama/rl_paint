@@ -9,22 +9,20 @@ import Services from '@/components/Services'
 import Compare_3 from '@/components/Compare_3'
 import Contact from '@/components/contact'
 import Faq from '@/components/Faq'
+import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
     return (
-        <div className='bg-gray-50 px-0'>
+        <div className='bg-gray-50 px-0  '>
             <Nav />
-            <div className='px-0 md:px-0 mx-auto'>
+            <div className='px-0 md:px-0 mx-auto snap-y snap-proximity overflow-x-hidden overflow-y-scroll h-screen'>
                 <Hero />
-
                 <Services />
-
-                {/* <Compare /> */}
-                {/* <Compare_2 /> */}
                 <Compare_3 />
                 <Faq />
-
+                <Testimonials />
                 <Contact />
+
                 {/* <CookieNotice /> */}
 
                 <footer>

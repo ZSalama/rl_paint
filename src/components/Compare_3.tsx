@@ -41,8 +41,8 @@ const responsive = {
 export default function Compare_3() {
     const carouselRef = useRef<typeof Carousel>(null)
     return (
-        <div className='pt-5 md:pt-10 lg:pt-20 w-full max-w-[900px] mx-auto p-4 md:p-6 lg:p-8 text-center'>
-            <span className='text-center text-4xl md:text-5xl font-bold text-slate-800 px-6 md:px-8 lg:px-12 flex justify-center'>
+        <div className='pt-5 md:pt-10 lg:pt-20 w-full max-w-[900px] mx-auto p-4 md:p-6 lg:p-8 text-center h-svh snap-center justify-center flex flex-col'>
+            <span className='text-center text-4xl md:text-5xl font-bold text-slate-800 px-6 md:px-8 lg:px-12 flex justify-center '>
                 Previous Work
             </span>
             <span className='text-center text-xl md:text-2xl text-slate-800 p-6 md:p-8 lg:p-12 flex justify-center'>

@@ -45,6 +45,7 @@ time:
 
 3-4
 
+4:30-7:30 (mostly logo and pictures)
 gigabasic animations
 
 paint roller.
