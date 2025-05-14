@@ -72,7 +72,7 @@ export default function Contact() {
                 event_category: 'engagement',
                 event_label: 'Contact Page',
             })
-            console.log('gtag', window.gtag)
+            // console.log('gtag', window.gtag)
         }
         // Optional: show a success toast or reset form
         alert('Message sent!')
