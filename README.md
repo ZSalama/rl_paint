@@ -8,3 +8,11 @@ First, run the development server:
 pnpm dev
 
 ```
+
+if you are ever having trouble styling, uncomment in globals.css
+
+```css
+* {
+    border: 1px solid red;
+}
+```

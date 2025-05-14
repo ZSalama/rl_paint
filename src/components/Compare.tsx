@@ -15,7 +15,7 @@ import { useRef } from 'react'
 export default function Compare() {
     const carouselRef = useRef<typeof Carousel>(null)
     return (
-        <div className='pt-40  md:pt-10 lg:pt-20 w-full p-4 md:p-6 lg:p-8 text-center  justify-center flex flex-col'>
+        <div className='pt-40 md:pt-10 lg:pt-20 w-full p-4 md:p-6 lg:p-8 text-center  justify-center flex flex-col'>
             <span className='text-center text-4xl md:text-5xl font-bold text-slate-800 px-6 md:px-8 lg:px-12 flex justify-center '>
                 Previous Work
             </span>
@@ -66,9 +66,8 @@ export default function Compare() {
                     keyBoardControl={true}
                     transitionDuration={1000}
                     dotListClass='custom-dot-list-style'
-                    itemClass='p-3 mb-5  shadow-lg rounded-xl'
-                    containerClass='max-h-300'
-                    // itemClass='mx-2'
+                    itemClass='p-3 mb-5 md:mb-5  shadow-lg rounded-xl'
+                    containerClass='max-h-200'
                     arrows={false}
                     renderArrowsWhenDisabled={false}
                     renderButtonGroupOutside={true}
@@ -88,7 +87,6 @@ export default function Compare() {
                         leftImageCss={{ borderRadius: '10px' }}
                         rightImageCss={{ borderRadius: '10px' }}
                     />
-
                     <ReactCompareImage
                         leftImage='/before_50.jpg'
                         rightImage='/after_12.jpg'
@@ -97,7 +95,6 @@ export default function Compare() {
                         leftImageCss={{ borderRadius: '10px' }}
                         rightImageCss={{ borderRadius: '10px' }}
                     />
-
                     <ReactCompareImage
                         leftImage='/before_8.jpeg'
                         rightImage='/after_8.jpg'
@@ -120,7 +117,6 @@ export default function Compare() {
                         width={1000}
                         height={1000}
                     />
-
                     <Image
                         className='rounded-lg'
                         src='/after_101.jpg'
@@ -128,14 +124,6 @@ export default function Compare() {
                         width={1000}
                         height={1000}
                     />
-
-                    {/* <Image
-                        className='rounded-lg'
-                        src='/after_102.jpg'
-                        alt='Example Work'
-                        width={1000}
-                        height={1000}
-                    /> */}
                     <Image
                         className='rounded-lg'
                         src='/after_103.jpg'
@@ -157,7 +145,7 @@ const ButtonGroup = ({
     previous: () => void
 }) => {
     return (
-        <div className='flex flex-row items-center justify-center gap-4 py-4'>
+        <div className='flex flex-row items-center justify-center gap-4 pt-0'>
             <button
                 className='cursor-pointer bg-[var(--primary)] shadow px-6 py-3 rounded hover:bg-[var(--foreground)] active:bg-[var(--foreground)]) hover:text-[var(--primary)]'
                 onClick={previous}
