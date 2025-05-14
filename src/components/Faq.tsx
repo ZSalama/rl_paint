@@ -10,7 +10,7 @@ export default function Faq() {
     return (
         <section id='FAQ'>
             <div className='gap-10 mx-auto sm:px-7 px-4 max-w-screen-xl pt-40'>
-                <h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700'>
+                <h2 className='text-center text-3xl md:text-5xl font-bold pb-10 text-slate-700'>
                     FAQ
                 </h2>
                 {/* <div className='bg-white rounded-xl shadow-md space-y-6 m-3'>

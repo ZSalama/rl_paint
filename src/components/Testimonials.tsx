@@ -5,7 +5,7 @@ export default function Services() {
     return (
         <section className='features  flex items-center' id='services'>
             <div className='mx-auto px-4 sm:px-7 max-w-screen-xl pt-40 flex flex-col'>
-                <h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 mb-4'>
+                <h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 pb-20'>
                     Testimonials
                 </h2>
                 <div className='flex flex-col md:flex-col xl:flex-row gap-4 md:gap-8 lg:gap-8'>
