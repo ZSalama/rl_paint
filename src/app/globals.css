@@ -10,6 +10,11 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Help with styling */
+/* * {
+    border: 1px solid red;
+} */
+
 .button:active {
     transform: scale(1.1);
 }

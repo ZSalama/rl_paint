@@ -6,7 +6,7 @@ export default function Nav() {
     return (
         <header className='sticky top-0 z-50 bg-white shadow-md'>
             <div className='mx-auto sm:px-4 px-4 max-w-screen-xl py-4'>
-                <div className='flex flex-row items-center'>
+                <nav className='flex flex-row items-center'>
                     <Link
                         data-aos='fade-right'
                         href='#hero'
@@ -20,7 +20,7 @@ export default function Nav() {
                             height={50}
                         />
                     </Link>
-                    <nav
+                    <div
                         data-aos='fade-left'
                         className='mx-auto mr-0 ml-auto md:mr-0 md:ml-auto mt-0 md:mt-0 flex items-center'
                     >
@@ -50,8 +50,8 @@ export default function Nav() {
                                 </Link>
                             </li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </header>
     )
