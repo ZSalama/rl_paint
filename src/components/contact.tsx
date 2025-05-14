@@ -31,21 +31,52 @@ export default function Contact() {
     })
 
     // 2. Define a submit handler.
+    // async function onSubmit(value: FormSchema) {
+    //     try {
+    //         const res = await fetch('/api/contact', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify(value),
+    //         })
+    //         if (!res.ok) throw new Error('Network response was not ok')
+    //         // Optional: show a success toast or reset form
+    //         alert('Message sent!')
+    //         form.reset()
+    //     } catch (error) {
+    //         console.error(error)
+    //         alert('Failed to send message.')
+    //     }
+    // }
+
     async function onSubmit(value: FormSchema) {
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(value),
-            })
-            if (!res.ok) throw new Error('Network response was not ok')
-            // Optional: show a success toast or reset form
-            alert('Message sent!')
-            form.reset()
-        } catch (error) {
-            console.error(error)
-            alert('Failed to send message.')
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(value),
+        })
+
+        const data = await res.json()
+
+        if (!res.ok || !data.success) {
+            alert(data?.message || 'An error occurred. Please try again later.')
+            throw new Error('Form failed')
         }
+
+        // ✅ Only trigger GA if server confirms real submission
+        if (
+            data.formSent &&
+            typeof window !== 'undefined' &&
+            'gtag' in window
+        ) {
+            window.gtag('event', 'contact_form_submit', {
+                event_category: 'engagement',
+                event_label: 'Contact Page',
+            })
+            // console.log('gtag', window.gtag)
+        }
+        // Optional: show a success toast or reset form
+        alert('Message sent!')
+        form.reset()
     }
 
     return (
