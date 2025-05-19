@@ -8,8 +8,8 @@ export default function Services() {
                 <h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 pb-20'>
                     Testimonials
                 </h2>
-                <div className='flex flex-col md:flex-col xl:flex-row gap-4 md:gap-8 lg:gap-8'>
-                    <Card className='flex-1'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 lg:gap-8 px-2'>
+                    <Card className='flex flex-col h-full'>
                         <CardTitle
                             className='hidden'
                             aria-label='testimonial 1'
@@ -26,35 +26,35 @@ export default function Services() {
                             attitude. We know who to call the next time we need
                             some help around the house!
                         </CardContent>
-                        <CardFooter className='italic'>
+                        <CardFooter className='italic mt-auto'>
                             Linda, Amelia Park
                         </CardFooter>
                     </Card>
-                    <Card className='flex-1'>
+                    <Card className='flex flex-col h-full'>
                         <CardTitle
                             className='hidden'
                             aria-label='testimonial 2'
                         >
                             Testimonial 2
                         </CardTitle>
-                        <CardContent>
+                        <CardContent className='flex-1'>
                             Rob took my small closet job on and paid so much
                             attention to detail, I hired him to paint the rest
                             of the interior! My home now looks so beautiful and
                             inviting. A++ on his work!
                         </CardContent>
-                        <CardFooter className='italic'>
+                        <CardFooter className='italic mt-auto'>
                             Dr. Saundra Jackson
                         </CardFooter>
                     </Card>{' '}
-                    <Card className='flex-1'>
+                    <Card className='flex flex-col h-full'>
                         <CardTitle
                             className='hidden'
                             aria-label='testimonial 3'
                         >
                             Testimonial 3
                         </CardTitle>
-                        <CardContent>
+                        <CardContent className='flex-1'>
                             As an older widow I was weary about hiring a
                             Painter, however RL Painting Solutions quickly put
                             my mind at ease and not only did such an amazing job
@@ -66,6 +66,26 @@ export default function Services() {
                         </CardContent>
                         <CardFooter className='italic'>
                             Ms. Alice Sue Burnett
+                        </CardFooter>
+                    </Card>
+                    <Card className='flex flex-col h-full'>
+                        <CardTitle
+                            className='hidden'
+                            aria-label='testimonial 3'
+                        >
+                            Testimonial 4
+                        </CardTitle>
+                        <CardContent className='flex-1'>
+                            As a licensed professional engineer, I must say that
+                            for work done to perfection for your home, Rob
+                            Lehmann is your go-to guy. He&apos;s done exterior
+                            power washing unbelievably; hung valuable artwork
+                            precisely; painted tray ceiling meticulously. He
+                            approached every job with professionalism and
+                            diligence.
+                        </CardContent>
+                        <CardFooter className='italic'>
+                            Richard J Dickstein
                         </CardFooter>
                     </Card>
                 </div>
