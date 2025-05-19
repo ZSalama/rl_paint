@@ -103,6 +103,22 @@ export default function Compare() {
                         leftImageCss={{ borderRadius: '10px' }}
                         rightImageCss={{ borderRadius: '10px' }}
                     />
+                    <ReactCompareImage
+                        leftImage='/before_70.jpg'
+                        rightImage='/after_70.jpg'
+                        sliderLineWidth={5}
+                        handleSize={40}
+                        leftImageCss={{ borderRadius: '10px' }}
+                        rightImageCss={{ borderRadius: '10px' }}
+                    />
+                    <ReactCompareImage
+                        leftImage='/before_71.jpg'
+                        rightImage='/after_71.jpg'
+                        sliderLineWidth={5}
+                        handleSize={40}
+                        leftImageCss={{ borderRadius: '10px' }}
+                        rightImageCss={{ borderRadius: '10px' }}
+                    />
                     <Image
                         className='rounded-lg'
                         src='/after_100.jpg'
@@ -110,13 +126,13 @@ export default function Compare() {
                         width={4000}
                         height={2000}
                     />
-                    <Image
+                    {/* <Image
                         className='rounded-lg'
                         src='/after_3.jpg'
                         alt='Example Work'
                         width={1000}
                         height={1000}
-                    />
+                    /> */}
                     <Image
                         className='rounded-lg'
                         src='/after_101.jpg'
@@ -124,13 +140,13 @@ export default function Compare() {
                         width={1000}
                         height={1000}
                     />
-                    <Image
+                    {/* <Image
                         className='rounded-lg'
                         src='/after_103.jpg'
                         alt='Example Work'
                         width={1000}
                         height={1000}
-                    />
+                    /> */}
                 </Carousel>
             </div>
         </div>
