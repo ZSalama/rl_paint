@@ -10,29 +10,37 @@ import Compare from '@/components/Compare'
 import Contact from '@/components/contact'
 import Faq from '@/components/Faq'
 import Testimonials from '@/components/Testimonials'
+import Link from 'next/link'
 
 export default function Home() {
-    return (
-        <div className='bg-gray-50 px-0  '>
-            <Nav />
-            <div className='px-0 md:px-0'>
-                <Hero />
-                <Services />
-                <Compare />
-                <Faq />
-                <Testimonials />
-                <Contact />
+	return (
+		<div className='bg-gray-50 px-0  '>
+			<Nav />
+			<div className='px-0 md:px-0'>
+				<Hero />
+				<Services />
+				<Compare />
+				<Faq />
+				<Testimonials />
+				<Contact />
 
-                {/* <CookieNotice /> */}
+				{/* <CookieNotice /> */}
 
-                <footer>
-                    <div className='flex flex-col md:flex-row items-center justify-between mx-auto sm:px-7 px-4 max-w-screen-xl py-20'>
-                        <p className='text-sm text-center text-gray-700 w-full'>
-                            RLPaintingSolutions LLC © 2025. All rights reserved.
-                        </p>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    )
+				<footer>
+					<div className='flex flex-col items-center sm:px-7 px-4 max-w-screen-xl pt-20 gap-4 pb-16'>
+						<p className='text-center text-gray-700 w-full'>
+							RLPaintingSolutions LLC © 2025. All rights reserved.
+						</p>
+						<Link
+							href='https://www.undermouse.com'
+							target='_blank'
+							className='text-gray-700'
+						>
+							Website by UnderMouse
+						</Link>
+					</div>
+				</footer>
+			</div>
+		</div>
+	)
 }
