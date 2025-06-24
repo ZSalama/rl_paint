@@ -34,7 +34,7 @@ export default function Faq() {
 					<Accordion type='single' collapsible>
 						<AccordionItem value='item-1'>
 							<AccordionTrigger className='text-xl md:text-2xl p-8 md:p-12 lg:p-12 font-semibold text-slate-800 hover:underline'>
-								Why is insurance important?
+								Why is insurance so important?
 							</AccordionTrigger>
 							<AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
 								<article>

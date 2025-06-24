@@ -3,12 +3,12 @@ import React from 'react'
 
 export default function About() {
 	return (
-		<section className='features pt-40 flex items-center' id='services'>
+		<section className='features pt-20 flex items-center' id='services'>
 			<div className='mx-auto px-4 sm:px-7 max-w-screen-lg py-20 flex flex-col'>
 				<h2 className='text-center text-4xl md:text-5xl font-bold text-slate-800 mb-4'>
 					About
 				</h2>
-				<div className='sm:px-7 px-4 py-10 mt-10 md:mt-20 border-b-6 border-r-6 bg-white/96 text-slate-800 rounded-lg shadow-lg text-lg'>
+				<div className='sm:px-7 px-4 py-10 mt-10 border-b-6 border-r-6 bg-white/96 text-slate-800 rounded-lg shadow-lg text-lg'>
 					<p>
 						A Marine Corps Veteran, I settled in South Florida where I gained
 						over 20 years experience in painting and home repairs. Moving to

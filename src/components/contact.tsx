@@ -72,7 +72,7 @@ export default function Contact() {
 		<>
 			<Form {...form}>
 				<div
-					className='px-5 flex flex-col justify-center items-center pt-40'
+					className='px-5 flex flex-col justify-center items-center pt-20'
 					id='contact'
 				>
 					<h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700 max-w-4xl'>
