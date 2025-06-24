@@ -1,5 +1,4 @@
 import React from 'react'
-import { PaintbrushVertical, Wrench, Hammer, House } from 'lucide-react'
 // import Image from 'next/image'
 
 export default function About() {

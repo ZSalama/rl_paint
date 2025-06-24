@@ -16,7 +16,7 @@ export default function Hero() {
 						<h1 className='text-white drop-shadow-lg text-3xl md:text-6xl font-bold max-w-[900px] mx-auto pb-4'>
 							RL Painting Solutions
 						</h1>
-						<p className='text-white drop-shadow-sm text-lg max-w-[600px] mx-auto pt-4 pb-4'>
+						<div className='text-white drop-shadow-sm text-lg max-w-[600px] mx-auto pt-4 pb-4'>
 							<p className='text-red-400'>Painting & Renovation Services</p>
 							<p>Exclusive to Amelia Island and Fernandina Beach, FL</p>
 							<p className='text-green-400 flex flex-row justify-center items-center gap-2 md:gap-4'>
@@ -24,7 +24,7 @@ export default function Hero() {
 								Licensed and Insured
 								<AiFillSafetyCertificate />
 							</p>
-						</p>
+						</div>
 						<div className='flex mx-auto gap-0 md:gap-10 items-center'>
 							<Link
 								href='#contact'
