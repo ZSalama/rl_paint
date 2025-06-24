@@ -11,6 +11,7 @@ import Contact from '@/components/contact'
 import Faq from '@/components/Faq'
 import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
+import About from '@/components/About'
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 				<Compare />
 				<Faq />
 				<Testimonials />
+				<About />
 				<Contact />
 
 				{/* <CookieNotice /> */}

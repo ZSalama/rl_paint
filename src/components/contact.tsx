@@ -72,7 +72,7 @@ export default function Contact() {
 		<>
 			<Form {...form}>
 				<div
-					className='px-5 flex flex-col justify-center items-center pt-40'
+					className='px-5 flex flex-col justify-center items-center pt-20'
 					id='contact'
 				>
 					<h2 className='text-center text-3xl md:text-5xl font-bold pb-20 text-slate-700 max-w-4xl'>
@@ -92,6 +92,12 @@ export default function Contact() {
 						className='gap-10 sm:px-7 px-4 max-w-screen-xl py-20 border-b-6 border-r-6 bg-white/96 rounded-lg shadow-lg md:min-w-xl lg:min-w-4xl'
 					>
 						<div className='grid grid-cols-1 md:grid-cols-1 gap-6 max-w-[90vw] md:max-w-[80vw] lg:max-w-[60vw] mx-auto'>
+							<p className=' text-md text-slate-600 font-normal pt-2'>
+								Please contact me by text or using the contact form below. I
+								might be busy on another job but will be sure to get back to you
+								in the evening. Thanks for giving me the opportunity to make
+								your home beautiful!
+							</p>
 							<FormField
 								control={form.control}
 								name='name'
