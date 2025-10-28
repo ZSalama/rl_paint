@@ -21,7 +21,7 @@ export default function Faq() {
 							</AccordionTrigger>
 							<AccordionContent className='text-base md:text-lg px-8 pb-8 md:px-12 md:pb-12 lg:px-12 lg:pb-8 text-slate-600 mt-2'>
 								<article>
-									Yes, Repainting Solutions is fully covered with a Commercial
+									Yes, RL Painting Solutions is fully covered with a Commercial
 									General Liability policy from Spinnaker Insurance Company
 									($1,000,000/$2,000,000 limit per occurrence/aggregate).
 								</article>

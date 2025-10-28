@@ -93,10 +93,10 @@ export default function Contact() {
 					>
 						<div className='grid grid-cols-1 md:grid-cols-1 gap-6 max-w-[90vw] md:max-w-[80vw] lg:max-w-[60vw] mx-auto'>
 							<p className=' text-md text-slate-600 font-normal pt-2'>
-								Please contact me by text or using the contact form below. I
-								might be busy on another job but will be sure to get back to you
-								in the evening. Thanks for giving me the opportunity to make
-								your home beautiful!
+								Please contact Robert Lehmann by text or using the contact form
+								below. I might be busy on another job but will be sure to get
+								back to you in the evening. Thanks for giving me the opportunity
+								to make your home beautiful!
 							</p>
 							<FormField
 								control={form.control}
@@ -169,20 +169,23 @@ export default function Contact() {
 												className='w-full h-32 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--primary)] border-r-4 border-b-4'
 											/>
 										</FormControl>
-										<FormDescription>
-											If you prefer to call or text, you can reach me at:{' '}
-											<a href='tel:9043105196'>(904) 310-5196</a>
-										</FormDescription>
+
 										<FormMessage />
 									</FormItem>
 								)}
 							/>
-							<Button
-								type='submit'
-								className='flex cursor-pointer w-full md:w-50 bg-[var(--primary)] hover:bg-[var(--foreground)] font-medium transition-colors justify-center items-center border-b-4 border-r-4 text-black hover:text-[var(--primary)]'
-							>
-								Send Message
-							</Button>
+							<div className='flex justify-center items-center'>
+								<Button
+									type='submit'
+									className='flex cursor-pointer w-full md:w-2/3 xl:w-1/3 bg-[var(--primary)] hover:bg-[var(--foreground)] font-medium transition-colors justify-center items-center border-b-4 border-r-4 text-black hover:text-[var(--primary)]'
+								>
+									Send Message
+								</Button>
+							</div>
+							<FormDescription className='text-lg text-slate-700'>
+								If you prefer to call or text, you can reach me at:{' '}
+								<a href='tel:9043105196'>(904) 310-5196</a>
+							</FormDescription>
 						</div>
 					</form>
 				</div>
